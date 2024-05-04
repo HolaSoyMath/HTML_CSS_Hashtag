@@ -1,0 +1,176 @@
+/* Global */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #404040
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+figcaption {
+  font-size: 15px;
+}
+
+figcaption a{
+  text-decoration: none;
+}
+
+figcaption a strong{
+  color: #F7A70C;
+}
+
+.botao{
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.realce-semibold {
+  font-weight: 600;
+}
+
+
+/* Cabeçalho */
+
+.menu li a{
+  color: #112e61;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.hero-paragrafo{
+  font-size: 19px;
+  font-weight: lighter;
+}
+
+.hero-botao{
+  color: #fff;
+  background-color: orange;
+}
+
+/* Conteúdeos Gratuitos */
+
+.gratuito-h2 span{
+  color: #7A40BE;
+  font-weight: 600;
+}
+
+.gratuito-h3{
+  background-color: #4054B2;
+  color: #fff;
+  font-weight: 700;
+}
+
+.gratuito-cursos li a{
+  font-size: 19px;
+  text-decoration: none;
+}
+
+/* Diferenciais */
+
+.diferenciais-h2 {
+  color: #fff;
+  background-color: #112e61;
+}
+
+.diferenciais-h2 strong {
+  color: #fff;
+}
+
+.diferenciais-p {
+  font-size: 19px;
+  background-color: #112e61;
+  color: #fff;
+}
+
+.diferenciais-h3-descricao {
+  font-size: 24px;
+  color: #005E88;
+  font-weight: 600;
+}
+
+.diferenciais-h3-empresas {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.diferenciais-h3-empresas a {
+  text-decoration: none;
+  color: #005E88;
+  font-weight: 700;
+}
+
+/* O que falam */
+
+.oquefalam-h2 span{
+  font-weight: 600;
+}
+
+.botao-oquefalam {
+  color: #fff;
+  background-color: #005E88;
+}
+
+/* Últimos posts*/
+
+.posts-h3 a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.posts-p{
+  font-size: 17px;
+}
+
+/* Como ajudar */
+
+.ajudar{
+  font-size: 19px;
+}
+
+.ajudar a {
+  color: #008ff7;
+  font-weight: 600;
+}
+
+/* Rodapé */
+
+.rodape-titulo{
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.rodape-subtitulo {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rodape-seg-subtitulo {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.rodape-link {
+  color: #1a77a4;
+}
