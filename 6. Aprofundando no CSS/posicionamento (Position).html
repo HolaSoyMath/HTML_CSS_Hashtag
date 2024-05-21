@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+      h2{
+        font-size: 2.4rem;
+      }
+      p{
+        font-size: 1.6rem;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+
+      .texto-sticky{
+        position: sticky;
+        top: 2rem;
+      }
+
+      a:first-child{
+        font-size: 1.6rem;
+        color: inherit;
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+      }
+
+      a{
+        font-size: 1.6rem;
+        color: inherit;
+        position: sticky;
+      }
+
+      div{
+        position: relative;
+        /* top: 20rem;
+        left: 20rem; */
+
+        height: 70rem;
+        width: 20rem;
+        background-color: green;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="">Acesse meu site!</a>
+      <a href="">Outro acesse meu site!</a>
+      <p class="texto-sticky">Um textinho aleatório</p>
+    </div>
+    <p>Parágrafo</p>
+  </body>
+</html>

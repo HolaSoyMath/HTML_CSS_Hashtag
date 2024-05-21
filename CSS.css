@@ -1,5 +1,15 @@
 /*########## DICAS*/
 
+/* Começo de um CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*O escolhido vai ser considerado desde a borda do bgl, nao apenas o conteudo em si*/
+}
+html {
+	font-size: 62.5%
+}
+
 /*VARIÁVEIS NO CSS
 Para criar uma variável em CSS devemos criar uma classe com ":root", dentro dela criar as variáveis que são iniciadas por "--"
 
@@ -619,3 +629,128 @@ scrolling="auto" /*Caso a pagina tenha um conteúdo maior, aparece a barra de ro
 scrolling="yes" /*Aparece a barra de rolagem independente do tamanho*/
 scrolling="no" /*Não aparece a barra de rolagem e a pagina fica parecendo uma imagem, snedo impossivel mexe-la*/
 
+
+/*### PSEUDO-CLASSES*/
+/* Normalmente quando usamos um link, temos que colocar 4 propriedades que chamamos de LVHA
+link
+visited
+hover
+active
+Que são as 4 pseudo-classes que um link pode obter*/
+
+/*Para alterar a formatação quando o texto tiver um link*/
+a:link {
+	color: orange;
+}
+
+/*Para alterar a formatação quando o link escrito já foi visitado*/
+a:visited {
+	color: orange;
+}
+
+/*Para alterar a formatação quando colocar o mouse em cima do link*/
+a:hover {
+	color: orange;
+}
+
+/*Para alterar a formatação quando clicar em cima do link, se clicar e segurar */
+a:active {
+	color: orange;
+}
+
+
+/*### PSEUDO-ELMENTOS*/
+/* Representa um elemento Filho ou Pai de onde foi colocado o pseudo-elemento */
+/*Alterar a primeira letra do elemento que você esta digitando*/
+p::first-letter{
+	font-size: 60px;
+	font-weight: 700;
+}
+
+/*Alterar a primeira linha do elemento que você esta digitando*/
+p::first-line{
+	color: red;
+}
+
+/*Após acabar aquele paragrafo, irá aparecer algo a mais através do After pelo "content"*/
+p::after{
+	content: 'Texto que entrará no final';
+}
+
+/*Antes de iniciar aquele paragrafo, irá aparecer algo a mais através do Before pelo "content"*/
+p::before{
+	content: 'Texto que entrará no inicio';
+}
+
+
+/*### BORDAS*/
+/*Offset-y, Offset-x, cor*/
+div{
+	box-shadow: 1rem 1rem black;
+}
+
+/*Offset-y, Offset-x, blur-radius (desfoque), cor*/
+div{
+	box-shadow: 1rem 1rem 1rem black;
+}
+
+/*Offset-y, Offset-x, blur-radius (desfoque), spread-radius(tamanho da sombra), cor*/
+div{
+	box-shadow: 1rem 1rem 1rem 2rem black;
+}
+
+/*Dentro do elemento, Offset-y, Offset-x, blur-radius (desfoque), spread-radius(tamanho da sombra), cor*/
+div{
+	box-shadow: inset 1rem 1rem 1rem 2rem black;
+}
+
+/*Obtendo mais de uma sombra*/
+div{
+	box-shadow: inset 1rem 1rem 1rem 2rem black,
+	inset 1rem -1rem 1rem 2rem red,
+	1rem 1rem -1rem 2rem brown;
+}
+
+
+
+/*### TIPOS DE VISUALIZAÇÃO (DISPLAY)*/
+/* BLOCO (Block), a característica é ocupar todo o espaço possível na horizontal, qubra linhas 
+H1, H2, H3, Div, p*/
+
+/* INLINE, Pega apenas o espaço do conteúdo, nao a linha inteira
+b, span 
+NÃO TEM COMO USAR O "HEIGHT" NO ELEMENTO INLINE, apenas são aplicáveis as medidas de margin e padding em suas extremidades direita e esquerda*/
+
+/* INLINE-BLOCK, a parte externa é do modo inline, utiliza apenas o espaço do conteúdo, não quebra as linhas, padding e margin funciona normalmente*/
+
+/* NONE, o elemento some*/
+
+
+
+/*### TIPOS DE POSIÇÃO (POSITION)*/
+/*Static, padrão*/
+
+/*Relative, ele cria um local específico e entao se desloca em relação a algum sentido.
+A mudança de local é apenas visual, o local ocupado em efetivo continua sendo o lugar original*/
+div{
+	position: relative;
+	top: 20rem;
+	left: 20rem;
+}
+
+/*Absolute, ele pega o elemento pai que tem a propriedade "relative" e se posiciona SEMPRE naquela posição em relação ao pai.
+LEMBRANDO QUE O ELEMENTO DEVE ESTAR COM O POSITION DE RELATIVE, caso contrário não funcionará
+O elemento em questão está sendo posicionado absolutamente em relação a quem? 
+A resposta deverá estar com posicionamento relativo
+*/
+a{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/*Fixed
+Sempre terá o elemento fixo em algum local da TELA, parecido com aqueles chats nas pgs*/
+
+/*Sticky
+Faz com que o elemento SEMPRE fique na página, mesmo quando role ela, parecido com aqueles menus que ficam na parte superior da tela e não somem nunca*/
