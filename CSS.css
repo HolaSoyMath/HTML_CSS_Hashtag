@@ -181,7 +181,7 @@ display: block;
 /*Deixar um elemento em Inline-level (Não tem a propriedade de altura e largura por exemplo)*/
 display: inline;
 
-/*Deixar um elemento em Inline-level com propriedades de Bloco*/
+/*Deixar um elemento em Inline-level com propriedades de Bloco como width e height*/
 display: inline-block;
 
 
